@@ -21,8 +21,7 @@ public class BankService {
     public Account getAccount(int id) {
         return repo.findById(id);
     }
-
-    // ⭐ MAIN TRANSACTION METHOD
+
     @Transactional
     public void transferMoney(int from, int to, double amount) {
 
